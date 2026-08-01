@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import ContactForm from "../components/ContactForm";
+import Hero from "../components/Hero";
 import { siteData } from "../data/siteData";
 
 export default function Home() {
