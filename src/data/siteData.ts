@@ -8,7 +8,7 @@ export interface GalleryItem {
 
 export const siteData = {
   brand: {
-    name: "THE FINE STROKES",
+    name: "THE FINE STROKE",
     tagline: "Where ink meets emotion.",
     subtitle: "Thoughtfully curated, bespoke gifts and custom calligraphy crafted to turn moments into heirlooms.",
     artistName: "The Fine Strokes Studio",
