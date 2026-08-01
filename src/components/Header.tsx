@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { siteData } from "../data/siteData";
+import { siteData } from "@/data/siteData";
 
 export default function Header() {
   return (
