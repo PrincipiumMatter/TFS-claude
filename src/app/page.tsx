@@ -1,34 +1,17 @@
+import React from "react";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Gallery from "../components/Gallery";
 import ContactForm from "../components/ContactForm";
-import Hero from "../components/Hero";
 import { siteData } from "../data/siteData";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-[#1C1B1A] selection:bg-[#C5A880] selection:text-white">
       <Header />
+      <Hero />
 
-      {/* Hero */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative">
-        <span className="font-cursive text-5xl md:text-7xl text-[#C5A880] mb-2 block">crafted by hand</span>
-        <h1 className="font-serif text-4xl md:text-7xl tracking-widest uppercase mb-6 leading-tight max-w-4xl">
-          Where ink meets <br /> <span className="italic font-light">emotion</span>.
-        </h1>
-        <p className="text-sm max-w-lg mx-auto leading-relaxed tracking-wide text-neutral-600 mb-10">
-          {siteData.brand.subtitle}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a href="#gallery" className="bg-[#1C1B1A] text-white px-8 py-4 text-xs uppercase tracking-widest hover:bg-[#C5A880] transition">
-            View Selected Works
-          </a>
-          <a href="#contact" className="border border-[#1C1B1A] px-8 py-4 text-xs uppercase tracking-widest hover:bg-[#1C1B1A]/5 transition">
-            Start a Custom Order
-          </a>
-        </div>
-      </section>
-
-      {/* About */}
+      {/* About Section */}
       <section id="about" className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">
@@ -37,7 +20,9 @@ export default function Home() {
             </div>
           </div>
           <div className="space-y-6">
-            <span className="font-serif text-xs uppercase tracking-widest text-[#C5A880] block">— Behind {siteData.brand.name}</span>
+            <span className="font-serif text-xs uppercase tracking-widest text-[#C5A880] block">
+              — Behind {siteData.brand.name}
+            </span>
             <h2 className="font-serif text-3xl md:text-4xl tracking-wider uppercase">Slow art for a fast-paced world.</h2>
             <p className="text-sm leading-relaxed text-neutral-600">
               Hi, I&apos;m the hands behind the pen. I believe that handwriting is a timestamp of the soul. In an age of fast, digital messages, I find magic in the deliberate scratch of a nib against handmade cotton paper.
@@ -46,10 +31,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery */}
       <Gallery />
 
-      {/* Services */}
+      {/* Services Section */}
       <section id="services" className="py-24 max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="font-serif text-xs uppercase tracking-widest text-[#C5A880]">— What We Create</span>
@@ -69,7 +53,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form */}
       <ContactForm />
 
       {/* Footer */}
