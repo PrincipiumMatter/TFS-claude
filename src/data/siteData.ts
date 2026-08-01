@@ -2,7 +2,7 @@ export interface GalleryItem {
   id: string;
   title: string;
   category: string;
-  image: string; // File path inside /public/images/
+  image: string;
   aspectRatio: 'tall' | 'square' | 'wide';
 }
 
