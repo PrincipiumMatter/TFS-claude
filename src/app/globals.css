@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-parchment: #FDFBF7;
+  --color-ink: #1C1B1A;
+  --color-accent-gold: #C5A880;
+  --color-blush: #F5EBE6;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+  background-image: radial-gradient(rgba(0,0,0,0.015) 1px, transparent 0), radial-gradient(rgba(0,0,0,0.015) 1px, transparent 0);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+.font-serif {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cursive {
+  font-family: 'Pinyon Script', cursive;
+}
