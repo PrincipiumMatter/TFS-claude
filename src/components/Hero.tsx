@@ -1,5 +1,5 @@
 import React from "react";
-import { siteData } from "../data/siteData";
+import { siteData } from "@/data/siteData";
 
 export default function Hero() {
   return (
