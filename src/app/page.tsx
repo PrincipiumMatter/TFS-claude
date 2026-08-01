@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Gallery from "../components/Gallery";
-import ContactForm from "../components/ContactForm";
-import { siteData } from "../data/siteData";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Gallery from "@/components/Gallery";
+import ContactForm from "@/components/ContactForm";
+import { siteData } from "@/data/siteData";
 
 export default function Home() {
   return (
