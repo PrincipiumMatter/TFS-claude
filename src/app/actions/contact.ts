@@ -2,7 +2,6 @@
 
 import { z } from "zod";
 
-// Schema validation prevents SQL/Script Injection & Mail Header Injection
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required").max(100),
   email: z.string().email("Invalid email address"),
@@ -26,9 +25,6 @@ export async function submitContactForm(prevState: any, formData: FormData) {
       errors: validated.error.flatten().fieldErrors,
     };
   }
-
-  // Safe to send to email service (e.g., Resend / SendGrid) or database (Supabase)
-  console.log("Safe form submission:", validated.data);
 
   return { success: true, message: "Thank you! Your inquiry has been sent." };
 }
