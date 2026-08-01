@@ -1,4 +1,4 @@
-import Image from "next/image";
+import React from "react";
 import { siteData } from "../data/siteData";
 
 export default function Gallery() {
@@ -17,7 +17,6 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          {/* Tall Image Placeholder / Card */}
           {tallItem && (
             <div className="md:col-span-4 space-y-2">
               <div className="relative h-[500px] w-full border border-dashed border-[#C5A880] bg-[#F5EBE6] flex items-center justify-center overflow-hidden group">
@@ -32,7 +31,6 @@ export default function Gallery() {
             </div>
           )}
 
-          {/* Square + Wide Grid */}
           <div className="md:col-span-8 flex flex-col justify-between space-y-8 md:space-y-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {squareItems.map((item) => (
