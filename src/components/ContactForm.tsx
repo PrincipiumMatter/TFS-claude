@@ -1,4 +1,3 @@
-"use rustic";
 "use client";
 
 import { useActionState } from "react";
